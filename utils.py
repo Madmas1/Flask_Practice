@@ -44,7 +44,7 @@ def get_candidate_skills_page(skill, candidates_list):
     """Метод формирующий страничку кандидата по указанию его навыка"""
     page = "<pre>"
     for candidate in candidates_list:
-        if skill.lower() in candidate['skills'.lower()]:
+        if skill.lower() in candidate['skills'].lower():
             page += (
                 "<pre>"
                 f"Имя кандидата - {candidate['name']} "
